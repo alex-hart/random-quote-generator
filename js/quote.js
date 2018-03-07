@@ -1,4 +1,8 @@
-//This script sends an Ajax request to a server to acquire random quotes on design. It also includes code to send an Ajax request everytime the user presses the "New Quote" button and updates the webpage accordingly. Code has also been added so that when the user clicks on the "Tweet" button they are redirected to their Twitter with the quote ready to tweet.
+//This script sends an Ajax request to a server to acquire random quotes on
+//Design. It also includes code to send an Ajax request everytime the user
+//Presses the "New Quote" button and updates the webpage accordingly. Code has
+//Also been added so that when the user clicks on the "Tweet" button they are
+//Redirected to their Twitter with the quote ready to tweet.
 
 $(document).ready(function() {
   //This is for loading a random quote on page load
@@ -20,7 +24,8 @@ $(document).ready(function() {
         $("#quote-source").text("");
       }
     },
-    //Making sure cache is false so that more random quotes can be generated upon clicking "New Quote"
+    //Making sure cache is false so that more random quotes can be generated
+    //Upon clicking "New Quote"
     cache: false
   });
 
