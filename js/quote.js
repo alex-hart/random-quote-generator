@@ -25,7 +25,8 @@ $(document).ready(function() {
   });
 
   //Generating another quote when the button is pressed
-  $("#getQuote").on("click", function(e) {
+  var $getQuote = $("#get-quote");
+  $getQuote.on("click", function(e) {
     e.preventDefault();
     $.ajax({
       url:
@@ -48,7 +49,8 @@ $(document).ready(function() {
   });
 
   //Tweeting the quote when button is pressed
-  $("#tweet-this").on("click", function() {
+  var $tweetThis = $("#tweet-this");
+  $tweetThis.on("click", function() {
     var tweetQuote = $("#quote-content").text();
     var tweetTitle = $("#quote-title").text();
     window.open(
